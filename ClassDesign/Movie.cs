@@ -19,6 +19,9 @@ namespace ClassDesign
             this.Lenth = lenth;
         }
 
+        public string Title { get => title; set => title = value; }
+        public string Genre { get => genre; set => genre = value; }
+        public string MainCharacter { get => mainCharacter; set => mainCharacter = value; }
         public int Lenth { get => lenth; set => lenth = value; }
 
         public override string ToString()

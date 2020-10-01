@@ -36,16 +36,16 @@ namespace CommandPrompt
                         monitor.SetScreenText(lineNum, text);
                         break;
                     case 4:
-                        monitor.ClearScreen();
+                        //monitor.ClearScreen();
                         break;
                     case 5:
                         monitor.SaveScreen( GetInput( "File: " ) );
                         break;
                     case 6:
-                        //monitor.ReloadScreen( GetInput( "File: " ) );
+                        monitor.ReloadScreen( GetInput( "File: " ) );
                         break;
                     default:
-                        monitor.ClearScreen();
+                        //monitor.ClearScreen();
                         break;
                 }
             } while (menuOption != 0);
@@ -76,6 +76,6 @@ namespace CommandPrompt
         }
 
 
-    }       //  end of the Program class. Above here is where ALL the methods are
-}           //  end of the CommandPrompt namespace
+    }       
+}           
 

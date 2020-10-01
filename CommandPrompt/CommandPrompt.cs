@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace CommandPrompt
@@ -16,13 +17,13 @@ namespace CommandPrompt
         {
             backgroundColor = ConsoleColor.Blue;
             foregroundColor = ConsoleColor.Black;
-            // create the screen to hold the number of rows passed in with the height parameter
+            
             screenText = new string[height];
 
-            // we will use the C# object to set the size of our window.
+            
             Console.SetWindowSize(columns, height + 7);
 
-            // let's set the initial screen rows to all blank lines
+            
             for (int i = 0; i < screenText.Length; i++)
             {
                 screenText[i] = "";
@@ -78,7 +79,53 @@ namespace CommandPrompt
                 default: color = ConsoleColor.DarkGray; break;
             }
             return color;
-        }   
+        }
+        public void SaveScreen(string fileName)
+        {
+            StreamWriter textOut = null;
+            try
+            {
+                fileName = "../../../" + fileName;
+                textOut = new StreamWriter(fileName);
+                foreach (var line in screenText)
+                {
+                    textOut.WriteLine(line);
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error Creating file: ");
+                Console.WriteLine(ex.ToString());
+                return;
+            }
+            finally
+            {
+                if (textOut != null)
+                    textOut.Close();
+            }
+        }
+            public void ReloadScreen(string fileName)
+            {
+            string line;
+            int lineNumber = 0;
+                StreamReader textIn;
+            fileName = "../../../" + fileName;
+            textIn = new StreamReader(fileName);
+            while (true)
+            {
+                line = textIn.ReadLine();
+                if (line == null)
+                {
+                    break;
+                }
+                screenText[lineNumber] = line;
+                lineNumber++;
+            }
+            textIn.Close();
+            }
+           
 
     }
 }
