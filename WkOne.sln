@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectDes", "ObjectDesign\O
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandPrompt", "CommandPrompt\CommandPrompt.csproj", "{A632B951-85BC-4E52-861A-1514DC18759D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inheritance", "inheritance\inheritance.csproj", "{C8807737-E144-4DF1-BC2B-D97CAA485674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "inheritance", "inheritance\inheritance.csproj", "{C8807737-E144-4DF1-BC2B-D97CAA485674}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking", "Banking\Banking.csproj", "{8FFF1A18-6601-433C-95C5-F7CE4AA6C532}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banking", "Banking\Banking.csproj", "{8FFF1A18-6601-433C-95C5-F7CE4AA6C532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoTheMath", "DoTheMath\DoTheMath.csproj", "{A92138DB-2511-411B-872D-4E7162AB19EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{8FFF1A18-6601-433C-95C5-F7CE4AA6C532}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FFF1A18-6601-433C-95C5-F7CE4AA6C532}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FFF1A18-6601-433C-95C5-F7CE4AA6C532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A92138DB-2511-411B-872D-4E7162AB19EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92138DB-2511-411B-872D-4E7162AB19EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A92138DB-2511-411B-872D-4E7162AB19EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A92138DB-2511-411B-872D-4E7162AB19EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
