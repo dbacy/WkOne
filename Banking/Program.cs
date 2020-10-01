@@ -11,10 +11,14 @@ namespace Banking
             int menuOption = 0;
             CheckingAccount checking = null;
             SavingsAccount savings = null;
-
+            
+            
             while (menuOption != 1)
             {
-                menuOption = GetNumber("1 - Exit\n2 - Create Checking\n3 - Create Savings");
+                menuOption = GetNumber("1 - Exit\n2 - " +
+                    "Create Checking\n3 - Create Savings\n4 - " +
+                    "Check Checking Balane\n5 - Check Saving Balance\n6 -" +
+                    " Deposit To Checking\n7 - Deposit To Savings ");
                 switch (menuOption)
                 {
                     
@@ -32,6 +36,30 @@ namespace Banking
                         balance = GetNumber("Initial Amt: ");
                         savings = new SavingsAccount(accountName, balance, 0.03f);
                         break;
+
+                    case 4:
+                        Console.WriteLine("Your Checking Account currently is: " + checking);
+                        break;
+
+                    case 5:
+                        Console.WriteLine("Your Saving Account currently is:" + savings);
+                        break;
+
+                    case 6:
+                        accountName = GetInput("Account Name");
+                        int CheckingDposit = Utils.GetNumber("How much will you be depositing?: ");
+                        checking. Deposit(CheckingDposit);
+                        Console.WriteLine(CheckingDposit + " Has been added");
+                        break;
+
+                    case 7:
+                        accountName = GetInput("Account Name");
+                        int savingDeposit = Utils.GetNumber("How much will you be depositing?: ");
+                        savings.Deposit(savingDeposit);
+                        Console.WriteLine(savingDeposit + " Has been added");
+                        break;
+
+
 
                     default:
                         break;
@@ -57,5 +85,7 @@ namespace Banking
             }
             return userNumber;
         }   
+
+        
     }
 }
