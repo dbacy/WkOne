@@ -42,7 +42,7 @@ namespace DoTheMath
                         if (userInput[1] == "^")
                             Console.WriteLine("The exponent of " + num1 + " and " + num2 + " is: " + Math.Pow(num1, num2));
                         
-
+                        
                     
                         if (userInput[1] == "%")
                             Console.WriteLine("The remainder of " + num1 + " and " + num2 + " is: " + (num1 % num2));

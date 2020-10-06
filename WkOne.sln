@@ -27,7 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "inheritance", "inheritance\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banking", "Banking\Banking.csproj", "{8FFF1A18-6601-433C-95C5-F7CE4AA6C532}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoTheMath", "DoTheMath\DoTheMath.csproj", "{A92138DB-2511-411B-872D-4E7162AB19EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoTheMath", "DoTheMath\DoTheMath.csproj", "{A92138DB-2511-411B-872D-4E7162AB19EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoTheMathTwo", "DoTheMathTwo\DoTheMathTwo.csproj", "{59D0A904-6F69-4C97-8B7C-26AF827FF3AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "!00Questions", "!00Questions\!00Questions.csproj", "{5FA790BC-737B-4665-858F-8A686C7B71E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,14 @@ Global
 		{A92138DB-2511-411B-872D-4E7162AB19EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A92138DB-2511-411B-872D-4E7162AB19EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A92138DB-2511-411B-872D-4E7162AB19EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59D0A904-6F69-4C97-8B7C-26AF827FF3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D0A904-6F69-4C97-8B7C-26AF827FF3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D0A904-6F69-4C97-8B7C-26AF827FF3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D0A904-6F69-4C97-8B7C-26AF827FF3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA790BC-737B-4665-858F-8A686C7B71E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA790BC-737B-4665-858F-8A686C7B71E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA790BC-737B-4665-858F-8A686C7B71E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA790BC-737B-4665-858F-8A686C7B71E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
